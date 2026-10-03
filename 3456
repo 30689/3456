@@ -1,0 +1,11 @@
+def powers_of_3():
+    n = 1
+    while True:
+        yield n
+        n *= 3
+
+
+gen = powers_of_3()
+
+for i in range(10):
+    print(next(gen))
